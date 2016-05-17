@@ -1,5 +1,42 @@
-<h1>This is the events page</h1>
+<h1>Let's see what's happening!</h1>
 
 <a href= "/events/new">Create an Event</a>
 
+<div class = "table-responsive">
+<table class = "table table-striped">
+<table width= "600" border = "5"  width="100"  cellpadding="4" cellspacing="3">
+
+<thead>
+ <tr>
+      <th colspan="2"><br><h1>Here's what's happening!</h1>
+      </th>
+   </tr>
+  <tr align="center">
+    <th>Name</th>
+    <th>Date</th> 
+    <th>Time</th>
+    <th>Description</th>
+  </tr>
+  </thead>
+
+  <% @events.each do |event| %>
+
+  <tbody>
+    <tr>
+      <td><%= event.name %></td>
+      <td><%= event.date %></td> 
+      <td><%= event.time %></td>
+      <td><%= event.description %></td>
+    </tr>
+
+    </tbody>
+
+  <% end %>
+
+</table>
+</div>
+
+
+
+   
 

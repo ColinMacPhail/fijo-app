@@ -1,0 +1,30 @@
+<p>Create your Profile</p>
+
+<%= form_tag '/profiles/#{profiles#show}' do %>
+
+  <div>
+  <%= label_tag :name %>
+  <%= text_field_tag :name %>
+  </div>
+
+  <div>
+  <%= label_tag :address %>
+  <%= text_field_tag :address %>
+  </div>
+
+  <div>
+  <%= label_tag :number_of_children %>
+  <%= text_field_tag :number_of_children %>
+  </div>
+
+  <div>
+  <%= label_tag :ages_of_children %>
+  <%= text_field_tag :number_of_children %>
+  </div>
+
+
+<%= submit_tag "Submit" %>
+
+<% end %>
+
+

@@ -7,6 +7,13 @@ Rails.application.routes.draw do
   get '/events/new', to: 'events#new'
   post '/events', to: 'events#create'
   get '/events/:id', to: 'events#show'  
+  get '/users/:id',  to: 'profiles#show'
+  get '/users/:id/edit', to: 'profiles#edit'
+  post '/users/:id', to: 'profiles#update'
+  post '/profiles', to: 'profiles#create'
+  get '/profiles/new', to: 'profiles#new'
+  get 'profiles/:id', to: 'profiles#show'
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.

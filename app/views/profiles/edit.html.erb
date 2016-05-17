@@ -1,0 +1,28 @@
+<p>Edit Your Account</p>
+
+<%= form_tag '/users/:id/edit', method: :patch do %>
+
+  <div>
+  <%= label_tag :name %>
+  <%= text_field_tag :name %>
+  </div>
+
+  <div>
+  <%= label_tag :address %>
+  <%= text_field_tag :address %>
+  </div>
+
+  <div>
+  <%= label_tag :number_of_children %>
+  <%= text_field_tag :number_of_children %>
+  </div>
+
+  <div>
+  <%= label_tag :ages_of_children %>
+  <%= text_field_tag :number_of_children %>
+  </div>
+
+
+<%= submit_tag "Submit" %>
+
+<% end %>

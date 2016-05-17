@@ -11,10 +11,18 @@
 
   <% if current_user %>
           <li><%= link_to "Sign Out", "/users/sign_out", method: :delete %></li>
+          <li><%= link_to "My Account", "/users/#{current_user.id}", method: :get %></li>
+          <% if current_user.profile == nil %>
+          <li><%= link_to "Create a Profile", "/profiles/new" %></li>
+          <% end %>
         <% else %>
           <li><%= link_to "Sign Up", "/users/sign_up" %></li>
           <li><%= link_to "Sign In", "/users/sign_in" %></li>
+
+
         <% end %>   
+
+        <a href= "/">Home</a>
 
 <%= yield %>
 
