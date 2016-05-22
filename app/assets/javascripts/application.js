@@ -18,13 +18,13 @@
 //= require bootstrap-switch.min
 //= require wow.min
 //= require slidebars.min
-//= require jquery.bxslider.min
+//= require bxslider.min
 //= require holder
 //= require buttons
-//= require jquery.mixitup.min
+//= require mixitup.min
 //= require circles.min
 //= require masonry.pkgd.min
-//= require jquery.matchHeight-min
+//= require matchHeight-min
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
