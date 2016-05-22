@@ -11,6 +11,20 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.cookie
+//= require bootstrap-sprockets
+//= require imagesloaded.pkgd.min
+//= require bootstrap.min
+//= require bootstrap-switch.min
+//= require wow.min
+//= require slidebars.min
+//= require jquery.bxslider.min
+//= require holder
+//= require buttons
+//= require jquery.mixitup.min
+//= require circles.min
+//= require masonry.pkgd.min
+//= require jquery.matchHeight-min
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
